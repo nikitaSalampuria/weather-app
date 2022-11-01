@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather map</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="weather_map.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Mapbox CDN -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+</head>
+<body>
+<nav class="container">
+    <h1 class="title">Manii's Weather Map</h1>
+    <h3 class="current-city"></h3>
+</nav>
+<div class="container form">
+    <form>
+        <input type="text" name="city" id="city" placeholder="Enter City, US here">
+        <input type="submit" value="Find" id="find">
+    </form>
+</div>
+<h3 class="cityDisplay"></h3>
+<div class="container-map"> <!-- style="height: 50px; width: 300px">-->
+
+    <div class="container forecast card">
+        <p class="date"></p>
+        <img style="width: 60px; height: 60px">
+        <hr><p class="description"></p>
+        <hr><p class="temperature"></p>
+        <hr><p class="humidity"></p>
+        <hr><p class="wind"></p>
+        <hr><p class="pressure"></p>
+    </div>
+    <div class="container forecast card">
+        <p class="date"></p>
+        <img style="width: 60px; height: 60px">
+        <hr><p class="description"></p>
+        <hr><p class="temperature"></p>
+        <hr><p class="humidity"></p>
+        <hr><p class="wind"></p>
+        <hr><p class="pressure"></p>
+    </div>
+    <div class="container forecast card">
+        <p class="date"></p>
+        <img style="width: 60px; height: 60px">
+        <hr><p class="description"></p>
+        <hr><p class="temperature"></p>
+        <hr><p class="humidity"></p>
+        <hr><p class="wind"></p>
+        <hr><p class="pressure"></p>
+    </div>
+    <div class="container forecast card">
+        <p class="date"></p>
+        <img style="width: 60px; height: 60px">
+        <hr><p class="description"></p>
+        <hr><p class="temperature"></p>
+        <hr><p class="humidity"></p>
+        <hr><p class="wind"></p>
+        <hr><p class="pressure"></p>
+    </div>
+    <div class="container forecast card">
+        <p class="date"></p>
+        <img style="width: 60px; height: 60px">
+        <hr><p class="description"></p>
+        <hr><p class="temperature"></p>
+        <hr><p class="humidity"></p>
+        <hr><p class="wind"></p>
+        <hr><p class="pressure"></p>
+    </div>
+</div>
+
+<div id="maps" style=""></div>
+
+<footer class="text-center">
+    <div>&#169; 2021 All rights reserved</div>
+    <div>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-rss"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+    </div>
+</footer>
+
+<!--keys.js for the open map api-->
+<script src="keys.js"></script>
+<!--Utils for geocoding-->
+<script src="../../codeup-web-exercises/JS/mapbox-geocoder-utils.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!--JavaScript-->
+<script src="weather_map.js"></script>
+
+
+</body>
+</html>

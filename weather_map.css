@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+    line-height: 1.25em;
+}
+
+body{
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    background: url("img/img.jp.jpeg");
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-map {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card{
+opacity: 0.9;
+border: 0.5em solid lightgrey ;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px lightgrey;
+}
+
+#maps {
+    width: 100%;
+    height: 400px;
+    margin-top: 5em;
+    border-radius: 10px;
+    border: 0.5em solid white;
+    padding-left: 3em;
+}
+
+footer{
+    padding-top: 1em;
+}
